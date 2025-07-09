@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links com Largura Total</title>
+    <style>
+        /* Reset básico para remover margens e preenchimentos padrão do navegador */
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
 
+        /* Estilo para a lista não ordenada */
+        ul {
+            list-style: none; /* Remove os marcadores de lista */
+            width: 100%; /* Garante que a lista ocupe toda a largura */
+        }
+
+        /* Estilo para cada item da lista (li) */
+        li {
+            background-color: #f0f0f0; /* Cor de fundo para visualização */
+            margin-bottom: 5px; /* Espaçamento entre os itens */
+        }
+
+        /* Estilo para os links dentro dos itens da lista */
+        li a {
+            display: block; /* Transforma o link em um elemento de bloco */
+            width: 100%; /* Faz com que o link ocupe toda a largura do seu pai (li) */
+            padding: 15px 20px; /* Espaçamento interno para o link */
+            text-decoration: none; /* Remove o sublinhado padrão do link */
+            color: #333; /* Cor do texto do link */
+            box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+            text-align: center; /* Centraliza o texto do link */
+            transition: background-color 0.3s ease; /* Transição suave para o efeito hover */
+        }
+
+        /* Efeito ao passar o mouse sobre o link */
+        li a:hover {
+            background-color: #ddd; /* Muda a cor de fundo ao passar o mouse */
+            color: #000;
+        }
+
+        /* Opcional: Adiciona um pouco de estilo ao rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #eee;
+            color: #555;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meus Links de Largura Total</h1>
+    </header>
+
+    <main>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">Visitar Google</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">Acessar YouTube</a></li>
+            <li><a href="https://www.wikipedia.org" target="_blank">Ir para Wikipedia</a></li>
+            <li><a href="https://www.github.com" target="_blank">Explorar GitHub</a></li>
+            <li><a href="https://www.openai.com" target="_blank">Conhecer OpenAI</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Exemplo de Links. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
